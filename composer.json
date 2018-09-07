@@ -1,0 +1,14 @@
+{
+    "name": "craigiswayne/theme-mod-defaults",
+    "description": "Set default Theme Mods",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Craig Wayne",
+            "email": "craigiswayne@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Theme Mod Defaults
  * Plugin URI:      https://github.com/craigiswayne/theme-mod-defaults
- * Description:     Set default Theme Mods
+ * Description:     Set default Theme Mods via JSON Configuration
  * Author:          Craig Wayne
  * Author URI:      https://github.com/craigiswayne
  * Text Domain:     theme-mod-defaults

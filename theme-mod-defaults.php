@@ -31,6 +31,7 @@ function _locate_config_file() {
 
 	if ( ! defined( 'STYLESHEETPATH' ) ) {
 		_doing_it_wrong( __FUNCTION__, 'This function must be called after the STYLEHSEETPATH constant has been defined', VERSION );
+
 		return false;
 	}
 
@@ -113,7 +114,13 @@ function init() {
 	foreach ( $json_config as $setting_name => $default_value ) {
 		add_filter(
 			"theme_mod_{$setting_name}", function ( $value ) use ( $json_config, $setting_name ) {
-				return false === $value ? ( $json_config[ $setting_name ] ?? $value ) : $value;
+
+				if ( false !== $value ) {
+					return $value;
+				}
+
+				return isset( $json_config[ $setting_name ] ) ? $json_config[ $setting_name ] : $value;
+
 			}, FILTER_PRIORITY
 		);
 	}

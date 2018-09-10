@@ -10,6 +10,13 @@
         }
     ],
     "minimum-stability": "stable",
+    "repositories":[
+        {
+            "type":"git",
+            "url":"git@gitlab.com:craigiswayne/dojo.git"
+
+        }
+    ],
     "require": {},
     "require-dev": {
         "craigiswayne/dojo": "dev-feature/requiring-3rd-party"
